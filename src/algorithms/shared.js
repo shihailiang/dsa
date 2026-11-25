@@ -127,3 +127,15 @@ export function adjacency(graph) {
   for (const list of lists.values()) list.sort((a, b) => Number(a.to) - Number(b.to));
   return lists;
 }
+
+/** ops 模式（边操作边记步）里把一步追加到步骤数组。 */
+export function emitStep(steps, partial) {
+  steps.push({
+    id: steps.length,
+    lineId: partial.lineId,
+    action: partial.action,
+    explanation: partial.explanation,
+    snapshot: partial.snapshot,
+    metrics: partial.metrics ?? null,
+  });
+}

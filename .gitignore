@@ -5,3 +5,5 @@ dist/
 .DS_Store
 Thumbs.db
 ds_ppt
+.git-empty-bak-*/
+.git-backup/

@@ -4,13 +4,16 @@
  * 未实现的按阶段逐步加入（写一个 JS + 一篇 MD + 在此登记一条）。
  *
  * 规划中的算法（后续阶段实现时，再解除对应登记）：
- *   linear:    singly-linked-list, stack, circular-queue, expression-eval
  *   tree:      tree-traversal
  *   graph:     dfs, bfs, prim, dijkstra
  *   design:    factorial, hanoi
  */
 const loaders = {
   'sequence-list': () => import('./linear/sequence-list.js'),
+  'singly-linked-list': () => import('./linear/singly-linked-list.js'),
+  stack: () => import('./linear/stack.js'),
+  'circular-queue': () => import('./linear/circular-queue.js'),
+  'expression-eval': () => import('./linear/expression-eval.js'),
   'bubble-sort': () => import('./sorting/bubble-sort.js'),
   'insertion-sort': () => import('./sorting/insertion-sort.js'),
   'selection-sort': () => import('./sorting/selection-sort.js'),
