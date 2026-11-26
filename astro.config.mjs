@@ -3,7 +3,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 export default defineConfig({
-  site: 'https://ifshi.github.io',
+  site: 'https://shihailiang.github.io',
   base: '/dsa',
   output: 'static',
   trailingSlash: 'always',
